@@ -1,0 +1,12 @@
+generated: 2026-09-23
+method: derived
+source:
+  - https://www.shelly.com/api/mcp
+  - https://us.shelly.com/api/mcp
+deployment:
+  mode: none
+  endpoint: null
+  install: null
+  package: null
+  auth: unknown
+  verified: derived

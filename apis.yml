@@ -1,23 +1,56 @@
 aid: shelly
 name: Shelly
-description: 'Shelly is a company surfaced via the API Evangelist harvest backlog (source: energy) and
-  added to the network as a stub for full-pipeline profiling.'
+image: https://www.shelly.com/cdn/shop/files/share-general.jpg?v=1726139769
+description: Shelly is a global IoT company that designs and manufactures smart home devices, including Wi‑Fi and Bluetooth switches, plugs, sensors,
+  energy meters, and controllers. Their products enable users to automate lighting, climate, security, and energy management through mobile apps
+  and integrations with platforms like Home Assistant and major voice assistants.
 url: https://raw.githubusercontent.com/api-evangelist/shelly/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:energy
-x-tier: stub
-x-tier-reason: harvest
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-23 (modular-v1; was harvest)
 specificationVersion: '0.20'
 created: '2026-09-23'
 modified: '2026-09-23'
 tags:
 - Company
-apis: []
+- IoT
+- SmartHome
+- Devices
+- Automation
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: LLMsTxt
+  url: llms/shelly-llms.txt
+- type: WellKnown
+  url: well-known/shelly-well-known.yml
+- type: Hosts
+  url: hosts/shelly-hosts.yml
+- type: Vendors
+  url: vendors/shelly-vendors.yml
+- type: PrivacyPolicy
+  url: https://www.shelly.com/blogs/use-cases/privacy-security-on-demand
+- type: Documentation
+  url: https://www.shelly.com/blogs/documentation
+- type: DeveloperPortal
+  url: https://portal.shelly.com/
+- type: DomainSecurity
+  url: security/shelly-domain-security.yml
 - type: Website
   url: https://www.shelly.com/
+apis:
+- name: Shelly API
+  description: GraphQL API for Shelly IoT platform
+  humanURL: https://www.shelly.com/api/graphql
+  baseURL: https://www.shelly.com/api
+  aid: shelly:shelly-api
+x-enrichment:
+  date: '2026-09-23'
+  status: enriched
+  artifacts_added: 12
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local

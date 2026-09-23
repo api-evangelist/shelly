@@ -1,0 +1,113 @@
+generated: '2026-09-23'
+method: derived
+source: the pre-flight dossier, apis.yml pointers, spec servers, well-known, vendors -- nothing fetched here
+generator: derive-hosts.py
+summary:
+  hosts: 8
+  own: 8
+  other_domain: 0
+  platform: 0
+  roles:
+  - api
+  - identity
+  - other
+  - portal
+  - website
+hosts:
+- host: accounts.shelly.com
+  found_by:
+  - well-known
+  types: []
+  serves: []
+  platform: shopify.com
+  registrable_domain: shelly.com
+  role: identity
+  relation: own
+- host: accounts.us.shelly.com
+  found_by:
+  - well-known
+  types: []
+  serves: []
+  platform: shopify.com
+  registrable_domain: shelly.com
+  role: identity
+  relation: own
+- host: api.shelly.com
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: shelly.com
+  role: api
+  relation: own
+- host: corporate.shelly.com
+  found_by:
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: shelly.com
+  role: other
+  relation: own
+- host: portal.shelly.com
+  found_by:
+  - pointer
+  - probed
+  - site-links
+  - docs-index
+  - contract-discovery
+  - well-known
+  types:
+  - DeveloperPortal
+  serves:
+  - docs
+  registrable_domain: shelly.com
+  role: portal
+  relation: own
+- host: us.shelly.com
+  found_by:
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types: []
+  serves: []
+  platform: shopify.com
+  registrable_domain: shelly.com
+  role: other
+  relation: own
+- host: www.shelly.com
+  found_by:
+  - pointer
+  - apis[]
+  - probed
+  - docs-index
+  - contract-discovery
+  - well-known
+  - vendor-detect
+  types:
+  - PrivacyPolicy
+  - Documentation
+  - Website
+  serves:
+  - api
+  - docs
+  - cdn
+  - hosting
+  platform: shopify.com
+  vendor: cloudflare
+  registrable_domain: shelly.com
+  role: website
+  relation: own
+- host: x.shelly.com
+  found_by:
+  - probed
+  - site-links
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: shelly.com
+  role: other
+  relation: own
