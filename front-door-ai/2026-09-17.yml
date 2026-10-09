@@ -1,0 +1,31 @@
+# Front Door AI Index — shelly — 2026-09-17
+# AI vocabulary counted on the provider's root page. Generated; do not edit.
+# `score` is null unless ownership is `own` — see front_door_ai.py.
+front_door_ai:
+  slug: shelly
+  lexicon_version: '1.0'
+  probed_at: '2026-09-25'
+  host: www.shelly.com
+  final_host: www.shelly.com
+  ownership: own
+  owner: shelly
+  shares_host_with: null
+  inherited_from: null
+  alias_of: null
+  verdict: scored
+  score: 5
+  band: 4
+  band_label: moderate
+  host_score: 5
+  density: 1.91
+  words: 2624
+  tiers:
+    agentic: 2
+    core: 3
+    model: 0
+  ambiguous: 153
+  top_terms:
+    smart: 132
+    automation: 21
+    AI: 3
+    AI assistant: 2
