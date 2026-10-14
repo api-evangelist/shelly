@@ -1,0 +1,77 @@
+edges:
+- partner_name: Connectivity Standards Alliance (Matter)
+  partner: null
+  type: contract
+  channel: standard-directory
+  relationship: standard-participant
+  direction: partner-built
+  evidence: https://on.dcl.csa-iot.org/dcl/vendorinfo/vendors/5264
+  category: Matter certified products
+  contract_reference:
+    register: CSA Distributed Compliance Ledger (Matter certification)
+    spec_file: null
+    standard: Matter
+    role: Matter certified vendor
+    vendor_id: 5264
+    registered_name: Shelly
+    legal_name: Shelly Europe Ltd.
+    landing_page: https://www.shelly.com/
+    identity_source: vendorLandingPageURL
+    matched_domain: shelly.com
+    matched_by: domain
+    certified_models: 20
+    certified_products:
+    - product: Dimmable Light
+      device_type_id: 257
+      models: 1
+      revoked_models: 0
+      latest_certification: '2025-09-11'
+      transports:
+      - bluetooth
+      - wi-fi
+      examples:
+      - Shelly Dimmer Gen4
+      lapsed: false
+    - product: Occupancy Sensor
+      device_type_id: 263
+      models: 1
+      revoked_models: 0
+      latest_certification: '2025-11-18'
+      transports:
+      - bluetooth
+      - wi-fi
+      examples:
+      - Shelly Presence Gen4
+      lapsed: false
+    - product: On/Off Plug-in Unit
+      device_type_id: 266
+      models: 16
+      revoked_models: 0
+      latest_certification: '2025-07-01'
+      transports:
+      - bluetooth
+      - wi-fi
+      examples:
+      - Shelly 1 Gen3
+      - Shelly 1 Gen4
+      - Shelly 1 Mini Gen3
+      lapsed: false
+    - product: Water Leak Detector
+      device_type_id: 67
+      models: 2
+      revoked_models: 0
+      latest_certification: '2025-06-30'
+      transports:
+      - bluetooth
+      - wi-fi
+      examples:
+      - Shelly Flood Gen4
+      - Shelly Flood S Gen4
+      lapsed: false
+    signal_note: certified_products = one entry per device type (diversity), not per model
+    detected_by: sweep-iot.py
+    detected: '2026-10-14'
+generated: '2026-10-14'
+method: searched
+checked:
+- https://on.dcl.csa-iot.org/dcl/vendorinfo/vendors
