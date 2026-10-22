@@ -19,7 +19,7 @@ edges:
     identity_source: vendorLandingPageURL
     matched_domain: shelly.com
     matched_by: domain
-    certified_models: 20
+    certified_models: 79
     certified_products:
     - product: Dimmable Light
       device_type_id: 257
@@ -45,7 +45,7 @@ edges:
       lapsed: false
     - product: On/Off Plug-in Unit
       device_type_id: 266
-      models: 16
+      models: 18
       revoked_models: 0
       latest_certification: '2025-07-01'
       transports:
@@ -68,9 +68,19 @@ edges:
       - Shelly Flood Gen4
       - Shelly Flood S Gen4
       lapsed: false
+    - product: unspecified device type
+      device_type_id: null
+      models: 57
+      revoked_models: 0
+      latest_certification: '2026-01-13'
+      transports:
+      - bluetooth
+      - wi-fi
+      examples: null
+      lapsed: false
     signal_note: certified_products = one entry per device type (diversity), not per model
     detected_by: sweep-iot.py
-    detected: '2026-10-14'
+    detected: '2026-10-19'
 generated: '2026-10-14'
 method: searched
 checked:
